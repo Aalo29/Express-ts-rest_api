@@ -20,7 +20,7 @@ userRouter.get('/', async (req: Request, res: Response) => {
 });
 
 // GET /users/:id
-userRouter.get('/id', async (req: Request, res: Response) => {
+userRouter.get('/:id', async (req: Request, res: Response) => {
     const id: number = parseInt(req.params.id, 10);
     const user: User = await UserService.find(id);
     if(user) {
@@ -30,7 +30,7 @@ userRouter.get('/id', async (req: Request, res: Response) => {
 });
 
 // POST /users
-userRouter.post('/', async (req: Request, res: Response) => {
+userRouter.post('/users', async (req: Request, res: Response) => {
     const user: User = req.body.user;
     const newUser: User = await UserService.create(user);
     return res.status(201).json(newUser);

@@ -7,5 +7,8 @@ export interface User {
 
 export interface user extends User{
     id: number;
+    name: string;
+    age: number;
 }
+
 

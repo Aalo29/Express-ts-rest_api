@@ -2,8 +2,8 @@ GET http://localhost:5000/users
 
 ###
 
-POST http://localhost:5000/users/1
-Content-Type: 
+POST http://localhost:5000
+Content-Type: application/json
 
 {
 
@@ -12,7 +12,7 @@ Content-Type:
 }
 
 ###
-PUT http://localhost:5000/users/1
+PUT http://localhost:5000/users/4
 Content-Type: application/json
 
 {
