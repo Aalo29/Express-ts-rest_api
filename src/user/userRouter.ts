@@ -30,8 +30,8 @@ userRouter.get('/:id', async (req: Request, res: Response) => {
 });
 
 // POST /users
-userRouter.post('/users', async (req: Request, res: Response) => {
-    const user: User = req.body.user;
+userRouter.post('/', async (req: Request, res: Response) => {
+    const user: User = req.body;
     const newUser: User = await UserService.create(user);
     return res.status(201).json(newUser);
 });

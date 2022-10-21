@@ -1,23 +1,21 @@
 GET http://localhost:5000/users
 
-###
-
-POST http://localhost:5000
-Content-Type: application/json
-
-{
-
-  "name": "David Bowie",
-  "age": 30
-}
 
 ###
-PUT http://localhost:5000/users/4
+POST http://localhost:5000/users
 Content-Type: application/json
 
 {
   "name": "Sarah Ali",
   "age": 37
+}
+###
+PUT http://localhost:5000/users/4
+Content-Type: application/json
+
+{
+  "name": "Nadia Ali",
+  "age": 1
 }
 
 ###
